@@ -1,0 +1,25 @@
+% father(X, Y) :- X is the father of Y.
+father(adam,bill).
+father(adam,brian).
+father(bill,charlie).
+
+% mother(X, Y) :- X is the mother of Y.
+mother(alice, bill).
+mother(alice, brian).
+mother(briana, charlie).
+
+% parent(X, Y) :- X is a parent of Y.
+parent(X,Y) :- father(X,Y).
+parent(X,Y) :- mother(X,Y).
+
+% parent(X, Y) :- X is an parent of Y.
+ancestor(X,Y) :- parent(X,Y).
+ancestor(X,Y) :- parent(X,Z), ancestor(Z,Y).
+
+% s(CASP)
+% has_sibling(X) :- parent(P,X), parent(P,Y), X \= Y.
+% only_child(X) :- not has_sibling(X).
+
+% Prolog
+has_sibling(X) :- parent(P,X), parent(P,Y), X\=Y.
+only_child(X) :- \+ has_sibling(X).
