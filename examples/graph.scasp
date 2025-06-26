@@ -1,0 +1,15 @@
+% Graph
+vertex(a).
+vertex(b).
+vertex(c).
+vertex(d).
+edge(b, a).
+edge(b, d).
+edge(a, c).
+edge(a, b).
+edge(b, c).
+edge(c, d).
+edge(d, a).
+edge(c, a).
+edge(a, d).
+edge(d, b).

@@ -1,0 +1,3 @@
+#pred opera(D) :: 'Bob goes to the opera on @(D:day)'.
+#pred not home(D) :: 'Bob does not stay at home on @(D)'.
+

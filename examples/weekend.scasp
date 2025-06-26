@@ -1,0 +1,5 @@
+%! /usr/bin/env scasp
+
+opera(saturday) :- not home(saturday).
+home(saturday) :- not opera(saturday).
+dinner(sunday).

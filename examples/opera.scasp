@@ -1,0 +1,9 @@
+opera(D) :- not home(D).    % A day D, Bob either goes to the opera...
+home(D) :- not opera(D).    %                       ... or stays home.
+home(monday).               % On Monday, Bob stays at home.
+
+:- baby(D), opera(D).       % When Bob's best friend comes with her baby, it is
+                            % not a good idea to take the baby to the opera.  
+baby(tuesday).              % They come on Tuesday.
+
+?- opera(D).                % QUERY: When might Bob go to the opera?

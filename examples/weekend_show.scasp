@@ -1,0 +1,10 @@
+
+opera(saturday) :- not home(saturday).
+home(saturday) :- not opera(saturday).
+dinner(sunday).
+
+#show opera/1, home/1, dinner/1.
+
+?- opera(saturday).
+
+

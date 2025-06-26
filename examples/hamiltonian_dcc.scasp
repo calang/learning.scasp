@@ -1,0 +1,2 @@
+dcc(chosen(U,W)) :- U \= V, chosen(V,W).
+dcc(chosen(W,U)) :- U \= V, chosen(W,V).

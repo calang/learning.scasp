@@ -1,0 +1,20 @@
+% A vertex V is reachable if...
+reachable(V) :- chosen(V, a).
+reachable(V) :- chosen(V,U), reachable(U).
+
+% Choose or not an edge of the graph.
+chosen(U,V) :- edge(U,V), not other(U,V).
+other(U,V) :- edge(U,V), not chosen(U,V).
+
+% Every vertex must be reachable.
+:- vertex(U), not reachable(U).
+
+% Do not choose edges to the same vertex
+:- chosen(U,W), U \= V, chosen(V,W).
+
+% Do not choose edges from the same vertex
+:- chosen(W,U), U \= V, chosen(W,V).
+
+?- reachable(a).
+
+#show chosen/2.
