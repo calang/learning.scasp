@@ -1,0 +1,33 @@
+%%% NON_TERMINATING, in 70 minutes
+
+% % Query
+% ?- assign(C, P, S).
+% ^C
+% real    70m8.899s
+% user    69m57.231s
+% sys     0m10.323s
+
+
+% Example: Timetable assignment with s(CASP)
+% Professors, Subjects, Classes
+prof(p1). prof(p2). prof(p3). prof(p4).
+subj(s1). subj(s2). subj(s3). subj(s4).
+class(c1). class(c2). class(c3). class(c4).
+
+% Assign one professor and one subject to each class
+assign(C, P, S) :-
+    class(C), prof(P), subj(S),
+    not assigned_prof(P, C),
+    not assigned_subj(S, C).
+
+% No professor teaches two classes
+assigned_prof(P, C) :- assign(C2, P, _), C2 \= C.
+
+% No subject is taught in two classes
+assigned_subj(S, C) :- assign(C2, _, S), C2 \= C.
+
+% Each class must have an assignment
+:- class(C), not assign(C, _, _).
+
+% Query: Show all assignments
+?- assign(C, P, S).

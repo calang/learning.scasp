@@ -1,0 +1,20 @@
+%%% NON_TERMINATING, in 70 minutes
+
+% Example: Timetable assignment with s(CASP)
+% Professors, Subjects, Classes
+class(c1). class(c2).   % class(c3). class(c4).
+prof(p1). prof(p2).     % prof(p3). prof(p4).
+
+% Assign one professor to each class
+assign(C, P) :- class(C), prof(P).
+
+% No professor teaches two classes
+:- assign(C1, P), assign(C2, P), C1 \= C2.   % no models
+
+% all classes must have an assignment
+% :- class(C), not assign(C, _).
+
+% Query: Show all assignments
+
+?- assign(C, P).
+
