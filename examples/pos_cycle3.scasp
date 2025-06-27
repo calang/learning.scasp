@@ -1,0 +1,16 @@
+p(0).
+p(X) :- p(Y) , X=1.
+
+?- p(Y).
+% Expected output:
+% { p(0) }
+
+?- X\=0, p(X).
+% Expected output:
+% { p(0), p(1) }
+
+?- p(X), X\=0.
+% Expected output:
+% No Models!
+
+

@@ -1,0 +1,6 @@
+jill_eats(X) :- jack_eats(X).
+jack_eats(X) :- jill_eats(X).
+
+?- jill_eats(beans).
+
+?- jill_eats(Y).

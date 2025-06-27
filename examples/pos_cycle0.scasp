@@ -1,0 +1,6 @@
+jill_eats :- jack_eats.
+jack_eats :- jill_eats.
+
+?- jill_eats.
+% this fails in scasp. and is non-terminating in prolog.
+

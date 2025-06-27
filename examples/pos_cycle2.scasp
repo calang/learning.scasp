@@ -1,0 +1,13 @@
+p(0).
+p(X) :- p(Y).
+
+?- p(1).
+% Expected output:
+% Model
+% { p(0), p(1) }
+
+?- p(X).
+% Expected output:
+% Model
+% { p(0) }
+
