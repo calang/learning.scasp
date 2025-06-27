@@ -22,6 +22,9 @@ Execution of Constraint Answer Set Programs](docs/articles/AShortTutorialOfsCASP
   - https://github.com/SWI-Prolog/sCASP
 - [SWISH site](https://swish.swi-prolog.org/example/scasp.swinb)
 - [SWISH site code examples](https://swish.swi-prolog.org/p/r34v2.swinb)
+- [aSc TimeTables](https://www.asctimetables.com/)
+  - Commercial solution to produce timetables
+- [Free timetable generation solutions](https://www.perplexity.ai/search/is-scasp-a-good-option-to-calc-2WdiY3HKQwCSWNEgCmPvRw)
 
 
 ### Forums
