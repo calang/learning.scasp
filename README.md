@@ -25,6 +25,9 @@ Execution of Constraint Answer Set Programs](docs/articles/AShortTutorialOfsCASP
 - [aSc TimeTables](https://www.asctimetables.com/)
   - Commercial solution to produce timetables
 - [Free timetable generation solutions](https://www.perplexity.ai/search/is-scasp-a-good-option-to-calc-2WdiY3HKQwCSWNEgCmPvRw)
+  - FET: debian package for Linux, Windows, available in Spanish
+    - free, mature, well documented
+  - and others ... 
 
 
 ### Forums
