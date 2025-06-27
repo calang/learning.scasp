@@ -17,4 +17,3 @@ assign(C, P) :- class(C), prof(P).
 % Query: Show all assignments
 
 ?- assign(C, P).
-
