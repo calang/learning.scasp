@@ -2,6 +2,9 @@
 
 Exercises in learning how to use SWI-Prolog s(CASP).
 
+Main experiment:
+- simple_tt*.scasp: generating a small school time table.
+
 
 ## Resources
 
